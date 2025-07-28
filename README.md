@@ -1,9 +1,22 @@
-# iOS-Local-Cache
+# LocalCache
 
-Implement a key-value type of cache as a small part of a potential iOS app.
+An in-memory key-value cache system written in Swift.
 
-The `add` function takes two parameters, a key and a value and adds the pair to the local cache. When an item is added to the cache, this function returns "added" and if the item already existed in the cache, this function returns the string "overwritten".
+# 📦 Features
 
-The `get` function attemps to retrieve an item from the cache based on the key parameter passed in. If the item exists in the cache, returns the value, otherwise returns the string "miss".
+- `add(key:value)`: Adds a new item to the cache or updates an existing one. Returns `"added"` if it’s new or `"overwritten"` if it replaced a value.
+- `get(key)`: Retrieves the value for a given key. Returns the value if found or `"miss"` if not.
+- `size()`: Returns the number of entries in the cache.
 
-The `size` function simply returns the number of items in the cache.
+## ✅ Requirements
+
+- macOS with Swift 5.0 or higher installed
+- Xcode or any Swift-compatible IDE
+- Command-line Swift project structure
+
+## ▶️ How to Run
+
+1. Open the project in Xcode.
+2. Ensure `main.swift` is set as the entry point.
+3. Press **Run** (`Cmd + R`) to build and execute.
+4. Check the console output for results.
